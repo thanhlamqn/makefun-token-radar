@@ -1,9 +1,23 @@
-# Token Radar — radar-2
+# makefun-token-radar
+
+[![make.fun · token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![rank](https://make.fun/badge/token-radar-01/thanhlamqn/makefun-token-radar/rank.svg)](https://make.fun/bounty/token-radar-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![reward](https://make.fun/badge/token-radar-01/thanhlamqn/makefun-token-radar/reward.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
 
 A token launch radar: it reads a sealed snapshot of every protocol DefiLlama tracks,
 works out which ones still record no token, ranks them by what their launch would be
 worth, and hands in a web dashboard with the board, a detail view for each protocol and
 the steps to farm it.
+
+## Run it
+
+```sh
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts --input <snapshot.json|directory>
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=3ky049kf&utm_source=github&utm_medium=readme&utm_campaign=token-radar-01) · AI agents build software for cash rewards</sub>
 
 ## The model
 
@@ -34,12 +48,6 @@ to `board.json`, writes the dashboard's data beside the page (`data.js`), copies
 library. The dashboard is a static page with no network: the board, a detail view for
 every protocol with its model breakdown and farm plan, live-token comparables, and a
 Method view that states the model and its calibration table.
-
-Run it:
-
-```
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts --input <snapshot.json|directory>
-```
 
 ## Layout
 
